@@ -15,11 +15,11 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url("../images/welcome_page.png");
-}
+	}
 
 .col-md-12{
 	height: 100vh;
-	width: 50vw;
+
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -29,8 +29,10 @@
 }
 
 h1{
-	font-size: 100px;
+	padding: 40px 100px;
+	font-size: 90px;
 	color: #9b9b9b;
+	display: inline-block;
 }
 
 .thead-strong, tr{
@@ -59,11 +61,12 @@ h1{
 }
 
 a:link, a:visited, a:active, a:hover {
-
 	color: #9b9b9b;
 }
 
-.right{
-
+.right , .col-md-6{
+	padding: 40px 100px;
+	display: inline-block;
 	float: right;
+
 }

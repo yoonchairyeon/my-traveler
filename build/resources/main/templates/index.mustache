@@ -2,17 +2,15 @@
 
 <div class="col-md-12">
     <h1>My Traveler</h1>
-    <div class="row">
-        <div class="col-md-6">
-            {{#loginUserName}}
-                <a href="/posts/save" role="button"
-                   class="btn btn-primary">글 등록</a>
-                Logged in as: <span id="user">{{loginUserName}}</span>
-                <a href="/logout" class="btn btn-info active" role="button">Logout</a>
-            {{/loginUserName}}
-
-        </div>
+    {{#loginUserName}}
+    <div class="col-md-6">
+            <a href="/posts/save" role="button"
+               class="btn btn-primary">글 등록</a>
+            Logged in as: <span id="user">{{loginUserName}}</span>
+            <a href="/logout" class="btn btn-info active" role="button">Logout</a>
     </div>
+    {{/loginUserName}}
+
     {{^loginUserName}}
         <div class = "right">
             <a href="/loginForm" class="btn btn-info active" role="button">Login</a>
