@@ -1,22 +1,31 @@
 {{>layout/header}}
 
+
 <div class="col-md-12">
 
-<h1>{{post.title}}</h1>
-<br>
-Logged in as : {{loginUserName}}
-<br>
-글 번호 : <br>
-{{post.id}}<br>
-<br>
-작성자 : <br>
-{{post.author}}<br>
-<br>
-내용 : <br>
-{{post.content}}<br>
-<br>
+    <section id="reviewD-container">
+        <table class="reviewD-tablelayout">
+            <div class="profilebox--nickname">
+                작성자 : {{post.author}}
+            </div>
+            <tr class="common-tbl__item">
+                <td>
+                    <span id="reviewD__title">{{post.title}}</span>
+                </td>
+            </tr>
 
+            <tr class="common-tbl__item">
+                <td>
+                    <p id="reviewD-content">
+                        {{post.content}}
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+<br><br>
 <a href="/posts/update/{{post.id}}" class="btn btn-info active" role="button">수정하기</a>
 <a href="/" class="btn btn-info active" role="button">돌아가기</a>
 </div>
+
 {{>layout/footer}}
