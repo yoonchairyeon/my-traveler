@@ -26,6 +26,14 @@ h1{
 	display: inline-block;
 }
 
+.login_center{
+	text-align: center;
+	padding: 40px 550px;
+	font-size: 60px;
+	color: #a2a3a7;
+	display: inline-block;
+}
+
 
 .title{
 	position: absolute;
@@ -64,6 +72,12 @@ a:link, a:visited, a:active, a:hover {
 
 }
 
+.col-md-4{
+	padding: 40px 100px;
+	margin: auto;
+}
+
+
 table {
 	margin: auto;
 	display: flex;
@@ -92,54 +106,30 @@ tbody{
 	font-size: 18px;
 }
 
-#reviewD-container {
-	display: inline-block;
-	width: 1100px;
-	height: auto;
-	margin: 0 auto;
-	/*border-left: 1px #CDCECF solid;*/
-}
-
-.reviewD-tablelayout {
-	width: 1000px;
-	text-align: right;
-	margin: 10px auto 0;
-}
-
-#reviewD__title {
-	font-size: 29px;
-}
-
-.profilebox--nickname {
-	margin: 3px;
+.nickname {
+	text-align: center;
+	margin: 10px;
 	height: 33px;
 	line-height: 40px;
 	font-size: 23px;
-	padding-top: 2px;
+	padding-top: 10px;
 	color: white;
-	/*border: 1pt solid;*/
-}
-
-.common-tbl__item {
-	font-size: 15px;
-	color: black;
-	text-align: left;
-	border: 1px #CDCECF solid;
-}
-
-.common-tbl__item > td {
-	padding: 10px 20px 10px 20px;
-}
-
-.profilebox--nickname {
-	margin: 3px;
-	height: 33px;
-	line-height: 40px;
-	font-size: 23px;
-	padding-top: 2px;
 	/*border: 1pt solid;*/
 }
 
 .form-group{
 	color: white;
+	size: 400px 200px;
+}
+
+.center{
+	text-align: center;
+}
+
+.col-md-2{
+	margin: auto;
+}
+
+.form-re{
+	text-align: center;
 }

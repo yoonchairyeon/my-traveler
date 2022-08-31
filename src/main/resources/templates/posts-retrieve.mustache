@@ -1,31 +1,27 @@
 {{>layout/header}}
 
-
 <div class="col-md-12">
+    <div class="nickname">
+        <span>작성자 : {{post.author}}</span>
+    </div>
+    <br>
+    <div class="col-md-2">
+    <div class="form-re">
+        <input type="text" class="form-control" id="title" value={{post.title}} readonly>
 
-    <section id="reviewD-container">
-        <table class="reviewD-tablelayout">
-            <div class="profilebox--nickname">
-                작성자 : {{post.author}}
-            </div>
-            <tr class="common-tbl__item">
-                <td>
-                    <span id="reviewD__title">{{post.title}}</span>
-                </td>
-            </tr>
+    </div>
+    <br>
 
-            <tr class="common-tbl__item">
-                <td>
-                    <p id="reviewD-content">
-                        {{post.content}}
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </section>
-<br><br>
+    <div class="form-re">
+        <input type="text" class="form-control" id="content" value= {{post.content}} readonly>
+    </div>
+    </div>
+
+<br>
+    <div class="center">
 <a href="/posts/update/{{post.id}}" class="btn btn-info active" role="button">수정하기</a>
 <a href="/" class="btn btn-info active" role="button">돌아가기</a>
+    </div>
 </div>
 
 {{>layout/footer}}
